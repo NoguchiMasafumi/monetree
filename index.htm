@@ -1,40 +1,43 @@
 <html>
 
     <head>
-        <meta description="このサイトは少しでも資産を増やしたい。少しでもお得になりたい。そんな願いを具体的に叶え、実践していく為のノウハウを発信・共有・提案しています。">
+        <meta description="このサイトは資産を増やしたい。お得になりたい。を具体的に叶え、実践していく為のノウハウを収集・発信・共有しています。">
 
         <style>
             body{margin:0px;
             width:100%;
-            overflow: hidden; 
+            overflow: auto; 
             }
             #title1{
                 overflow:hidden;
                 width:100%;
                 margin-bottom:32px;
             }
-            .logo{float:left;}
-            .title_exp{padding-top:22px;float:left;}
-
+            .logo{float:left;
+                padding-top:4px;padding-left:4px;
+                -webkit-mask:radial-gradient(ellipse at bottom , #fff 70%, transparent);
+                mask:radial-gradient(ellipse at bottom , #fff 70%, transparent);
+            }
+            .title_exp{padding-top:30px;float:left;}
 
             #content{
                 width:95%;
                 max-width:1200px;
                 margin-left:auto;
                 margin-right:auto;
-                overflow:hidden;
+                overflow:auto;
             }
 
             .main_cont{
-                
                 word-break:break-all;
-
-                max-width:868px;
+                max-width:852px;
                 box-sizing:border-box;
                 float:left;
                 /*width:100%;
                 padding-right:334px;*/
+                margin-right:16px;
             }
+
 
                 h2{
                     background-color: #DB6B97;
@@ -44,15 +47,17 @@
                     border-left-color:#A6CF98;
                     padding-left:8px;
                     margin:0px 0px 16px 0px;
-
                 }
 
                 .link_card{text-decoration: none;
                 margin-bottom:16px;
                 padding-bottom:16px;}
-                .link_card p{color:#000000;}
-
+                .link_card p{color:#000000;
+                       white-space: pre-wrap;
+                }
+                .link_card a{text-decoration: none;}
                 .link_card:hover{background-color:#F2FFE9;}
+
 
             .navigation{
                 float:right;
@@ -118,7 +123,6 @@
                 border-top-style:solid;
                 border-top-color:#c9c9c9;
                 color:#969595;
-
             }
 
 
@@ -135,66 +139,38 @@
                 margin-right:auto;
             }
             .disp_block{display:block;}
-    </style>
+        </style>
 
     </head>
 
 
     <body>
-        <div id="title1">
 
+        <div id="title1">
             <div class="logo">
                 <img src="img/common/logo_240_46.png" title="monetree">
             </div>
             <div class="title_exp">マネトリー</div>        
-        
         </div>
 
 
         <div id="content">
-
-            <div class="main_cont">
-                
-                <div class="over_flow_no">
-                    <a class="disp_block link_card" href="aas.htm">
-                        <h2>初心者が戸惑う証券会社</h2>
-                        <p class="pad_lr16">
-                            資産を増やしたいと思った時ネットなどで調べると、一番多く出てくる方法は「株をやってみては？」という提案です。しかしながら株をやるといってもどうやればいいかわからない。まず最初に誰もがつまづくところです。そしてこの壁がほとんどの方が超えられず「まぁいいか」で挫折してしまいます。
-                        </p>
+            <div id="app-blog" class="main_cont">
+                <div v-for="item in items" class="over_flow_no link_card">
+                    <a v-bind:href="item.url" target="_blank" class="disp_block">
+                        <h2>{{ item.text }}</h2>
                     </a>
+                    <p class="pad_lr16">{{ item.explain}}</p>
                 </div>
-                
-                <div class="over_flow_no">
-                    <a class="disp_block link_card" href="aas.htm">
-                        <h2>初心者が戸惑う証券会社</h2>
-                        <p class="pad_lr16">
-                            資産を増やしたいと思った時ネットなどで調べると、一番多く出てくる方法は「株をやってみては？」という提案です。しかしながら株をやるといってもどうやればいいかわからない。まず最初に誰もがつまづくところです。そしてこの壁がほとんどの方が超えられず「まぁいいか」で挫折してしまいます。
-                        </p>
-                    </a>
-                </div>
-
-
-                
-                <div class="over_flow_no">
-                    <a class="disp_block link_card" href="aas.htm">
-                        <h2>初心者が戸惑う証券会社</h2>
-                        <p class="pad_lr16">
-                            資産を増やしたいと思った時ネットなどで調べると、一番多く出てくる方法は「株をやってみては？」という提案です。しかしながら株をやるといってもどうやればいいかわからない。まず最初に誰もがつまづくところです。そしてこの壁がほとんどの方が超えられず「まぁいいか」で挫折してしまいます。
-                        </p>
-                    </a>
-                </div>
-
             </div>
+
             <div class="navigation">
                 <div class="over_flow_no mar_lr16">         
                     <img src="img/common/sbi_sidebanner290250.png" width="300">
                 </div>
             </div>
-
-
-
-
         </div>
+
 
         <div id="foot">
             <div class="tex_cen">&copy;Monetree マネトリー
@@ -204,6 +180,10 @@
     </body>
 
 
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script src="js/contents.js"></script>
+    </footer>
 
 
 
