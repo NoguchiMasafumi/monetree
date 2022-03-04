@@ -137,3 +137,4 @@
                 margin-right:auto;
             }
             .disp_block{display:block;}
+[v-cloak]{display:none;}
