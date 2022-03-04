@@ -2,149 +2,10 @@
 
     <head>
         <link rel="icon" type="image/png" sizes="16x16" href="img/common/icon-16x16.png">
+    	<link rel="stylesheet" href="css/monetree.css">
+
         <meta description="このサイトは資産を増やしたい。お得になりたい。を具体的に叶え、実践していく為のノウハウを収集・発信・共有しています。">
 
-        <style>
-            body{margin:0px;
-            width:100%;
-            overflow: auto; 
-            }
-            #title1{
-                overflow:hidden;
-                width:100%;
-                margin-bottom:32px;
-            }
-            .logo{float:left;
-                padding-top:4px;padding-left:4px;
-                -webkit-mask:radial-gradient(ellipse at bottom , #fff 70%, transparent);
-                mask:radial-gradient(ellipse at bottom , #fff 70%, transparent);
-            }
-            .title_exp{padding-top:30px;float:left;}
-
-            #content{
-                width:95%;
-                max-width:1200px;
-                margin-left:auto;
-                margin-right:auto;
-                overflow:auto;
-            }
-
-            .main_cont{
-                word-break:break-all;
-                max-width:852px;
-                box-sizing:border-box;
-                float:left;
-                /*width:100%;
-                padding-right:334px;*/
-                margin-right:16px;
-            }
-
-
-                h2{
-                    /*background-color: #DB6B97;
-                    color:#F2FFE9;*/
-                    color:#000000;
-                    border-left-width:4px;
-                    border-left-style:solid;
-
-                    /*border-left-color:#A6CF98;*/
-
-                    border-left-color:#DB6B97;
-                    padding-left:8px;
-                    margin:0px 0px 16px 0px;
-                }
-
-                .link_card{text-decoration: none;
-                margin-bottom:16px;
-                padding-bottom:16px;}
-                .link_card p{color:#000000;
-                       white-space: pre-wrap;
-                }
-                .link_card a{text-decoration: none;}
-                .link_card:hover{background-color:#F2FFE9;}
-
-
-            .navigation{
-                float:right;
-                width:332px
-                box-sizing:border-box;
-            }
-
-
-            @media only screen and (max-width: 1263px) {
-                .content{
-                    width: 100%;
-                }
-                .main_cont{
-                    float: none;
-                    width: 90%;
-                    height: 200px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-bottom: 30px;
-                }
-                .navigation{
-                    /*　floatを解除 */
-                    float: none;
-                    width: 90%;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-            }
-
-
-
-
-            @media only screen and (max-width: 767px) {
-                .content{
-                    width: 100%;
-                }
-                .main_cont{
-                    float: none;
-                    width: 90%;
-                    height: 200px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-bottom: 30px;
-                }
-
-
-                .navigation{
-                    /*　floatを解除 */
-                    float: none;
-                    width: 90%;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-            }
-
-
-            #foot{
-                width:100%;
-                /*position: absolute;*/
-                bottom: 0;
-                background-color: #efefef;
-                border-top-width:1px;
-                border-top-style:solid;
-                border-top-color:#c9c9c9;
-                color:#969595;
-            }
-
-
-            p{margin:0px;}
-            .w100p{width:100%;}
-            .over_flow_no{overflow:hidden;}
-            .flt_lef{float:left;}
-            .mar_lr16{margin-left:16px;margin-right:16px;}
-            .pad_a16{padding:16px;}
-            .pad_lr16{padding-left:16px;padding-right:16px;}
-            .tex_cen{text-align:center;}
-            .mar_lr_at{
-                margin-left:auto;
-                margin-right:auto;
-            }
-            .disp_block{display:block;}
-        </style>
 
     </head>
 
@@ -161,7 +22,7 @@
 
         <div id="content">
             <div id="app-blog" class="main_cont">
-                <div v-for="item in items" class="over_flow_no link_card">
+                <div v-for="item in items" class="over_flow_no link_card link_card_hov">
                     <a v-bind:href="item.url" target="_blank" class="disp_block">
                         <h2>{{ item.text }}</h2>
                     </a>
