@@ -21,7 +21,7 @@
 
 
         <div id="content">
-            <div id="app-blog" class="main_cont">
+            <div id="app-blog" class="main_cont" v-cloak>
                 <div v-for="item in items" class="over_flow_no link_card link_card_hov">
                     <a v-bind:href="item.url" target="_blank" class="disp_block">
                         <h2>{{ item.text }}</h2>
