@@ -38,13 +38,6 @@ var value = new Vue({
           explain:'資産を増やしたいと思った時ネットなどで調べると、一番多く出てくる方法は「株をやってみては？」という提案です。しかしながら株をやるといってもどうやればいいかわからない。まず最初に誰もがつまづくところです。そしてこの壁がほとんどの方が超えられず「まぁいいか」で挫折してしまいます。'
         },
         {
-          url:'blog/20161006.htm',
-          text:'2016-10-06 ニュージーランドツーリング',
-          img_url:'https://lh3.googleusercontent.com/WDNf68MrMo0Qr4WftMatueeSCcU5N4AK5PfqzGRSehdGbQ3p_1MzrKIJUZj8YlSnAj0J6mAC7GaTP6vqPkhhhT3WvE9eSfVIpx77Clqk75Yj4Bh1bdifxvqsLICV-Bk_5STTVxm0HQn-W-KMdFm3gboPt7t3AqKpw1l5zCMtZJ2EqNvY7kUxL95h5OMAAyfsEBBmARNhZS_Ryitov2qieMAXw0OjVB0Wj6rIDljIaCH8BwVwZjqxhir0un3TmJgpCFzemtAQNjMjpRHGKyqtcGgo8x-vN1cti9VtvowTmsmNEXImoR0PxKYlMb5r-syMpGh8gYageN4AgIPVlj0z1cduL4vOTRlGSxfsEVZJUY0FaM-YCR3NJJhVM1DzjcGQ9oXRjYjuHNgIXLaMVyYw4NlNMloLxywrryYPGB0wGkdgbiUcli7y5BekEN8qvAN-dF1OyjrAAiQ_-O2RmnOdUc0XBl9rGxyYk1qe26R5-lzIaDrHyZnZUCmfg-OiO5bEgvhVvXJxeRwnfirZ3yrhRQ_PGy1uCi2SDiA9Himu2wB8RTZ_r8S94G1W5Zdj8nwo7sPXEzhM87Z23w89A8rVBlQ_1LuNmHqT5mRBKjTesQZ2Kn9vmbtEfiBnI_4oR1riN4lcbm7cHmg8w-fwiE_58UqW5Hyu9-uEPCiVQ76_nleJ9SIR8lxe6D0iX2oz6OfT3eEzE49DiR0r66mlgbYh_EZuzmZ5a8fPX6TtTGIDAV0McRiSSG3tf-ZpRNR7css6e5ddjMaOT6FW_UnYoa8=w350-no?authuser=0',
-          explain:'子供を連れて宿を押さえない旅行をしてきました'
-
-        },
-        {
           url:'blog/20220221.htm',
           text:'アウトプットの体裁',
           img_url:'',
