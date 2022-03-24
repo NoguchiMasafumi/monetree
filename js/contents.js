@@ -97,6 +97,12 @@ var value = new Vue({
           text:'なぜ広告活動・寄付をおこなうか',
           img_url:'',
           explain:'転：税金がかからないから'
+        },
+        {
+          url:'blog/20220304.htm',
+          text:'カップ麺の金額には',
+          img_url:'',
+          explain:'転：保存性、利便性、流通のし易さのコストが含まれている。'
         }
       ]
     });
